@@ -1,0 +1,8 @@
+# This file tracks properties of this Flutter project.
+# Flutter tool state is intentionally minimal so the project can be recreated
+# or opened by a current Flutter SDK.
+version:
+  revision: "recreate-with-flutter-create"
+  channel: "stable"
+
+project_type: app
