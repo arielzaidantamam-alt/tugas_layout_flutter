@@ -12,7 +12,7 @@ void main() {
               nama: 'Ariel Zaidan Tamam',
               nim: '20240801009',
               hobi: 'Game & Coding',
-              skorAktivitas: 59,
+              skorAktivitas: 99,
             ),
           ),
         ),
@@ -23,7 +23,7 @@ void main() {
     expect(find.text('Ariel Zaidan Tamam'), findsOneWidget);
     expect(find.text('20240801009'), findsOneWidget);
     expect(find.text('Game & Coding'), findsOneWidget);
-    expect(find.text('59'), findsOneWidget);
+    expect(find.text('99'), findsOneWidget);
     expect(find.byType(FlutterLogo), findsOneWidget);
   });
 }
