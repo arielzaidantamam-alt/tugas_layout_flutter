@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'profile_card.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
+  const MyApp({super.key});
 
   final String nim = '20240801009';
 
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       nim.substring(nim.length - 2),
     );
 
-    return duaDigitTerakhir + 50;
+    return duaDigitTerakhir + 90;
   }
 
   @override
@@ -34,23 +34,26 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: scaffoldBackgroundColor,
       ),
-      home: const HomePage(),
+      home: HomePage(
+        skorAktivitas: skorAktivitas,
+      ),
     );
   }
 }
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  final int skorAktivitas;
+
+  const HomePage({
+    super.key,
+    required this.skorAktivitas,
+  });
 
   @override
   Widget build(BuildContext context) {
     const String nama = 'Ariel Zaidan Tamam';
     const String nim = '20240801009';
     const String hobi = 'Game & Coding';
-
-    final int duaDigitTerakhir =
-        int.parse(nim.substring(nim.length - 2));
-    final int skorAktivitas = duaDigitTerakhir + 50;
 
     return Scaffold(
       body: SafeArea(
