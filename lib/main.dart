@@ -8,13 +8,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Digit terakhir NIM = 9 (ganjil) → warna tealAccent[100]
     final int lastDigit = 9;
     final bool isOdd = lastDigit % 2 == 1;
 
     final Color scaffoldColor = isOdd
-        ? Colors.tealAccent[100] // toska muda
-        : Colors.amber[100];      // kuning muda
+        ? Colors.tealAccent[100] 
+        : Colors.amber[100];      
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
